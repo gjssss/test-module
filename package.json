@@ -9,10 +9,12 @@
   "scripts": {
     "build:stub": "pnpm --filter \"./packages/**\" build:stub",
     "dev:prepare": "pnpm --filter \"./packages/**\" dev:prepare",
-    "play:prepare": " pnpm --filter playground prepare",
+    "play:prepare": "pnpm --filter playground prepare",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "prepare": "simple-git-hooks"
+    "prepare": "simple-git-hooks",
+    "play": "pnpm --filter playground dev",
+    "dev": "pnpm play"
   },
   "dependencies": {
     "@nuxt/kit": "^3.8.2"

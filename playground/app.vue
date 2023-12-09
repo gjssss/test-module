@@ -2,8 +2,7 @@
 </script>
 
 <template>
-  <div>
-    Nuxt module playground!
-  </div>
-  <NuxtPage />
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
